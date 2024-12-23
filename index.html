@@ -322,6 +322,7 @@
         }
 
     </style>
+        
 </head>
 <body>
     <header>
@@ -333,7 +334,7 @@
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a href="#volunteer">Volunteer Work</a>
+        <a href="#work">Work Experience</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -341,9 +342,9 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="profile-picture">
-                <img src="image.png" alt="My Profile Picture">
+                <img src="image.png" alt="Nazmul Islam Nayeem">
             </div>
-            <p>I am Nazmul Islam Nayeem, a Computer Science & Engineering student at AIICT. My passion lies in cybersecurity, and I aspire to create a safer digital environment. Currently honing my skills in C programming, I am eager to further explore web development and ethical hacking.</p>
+            <p>I am Nazmul Islam Nayeem,student at AIICT. My passion lies in cybersecurity, and I aspire to create a safer digital environment. Currently honing my skills in C programming, I am eager to further explore web development and ethical hacking.</p>
         </section>
 
         <section id="skills">
@@ -362,49 +363,75 @@
 
         <section id="education">
             <h2>Education</h2>
-            <p><strong>BAF Shaheen College Kurmitola</strong></p>
-            <ul>
-                <li>Junior School Certificate: GPA - 5.00</li>
-                <li>Secondary School Certificate: GPA - 4.72</li>
-                <li>Higher School Certificate: GPA - 5.00</li>
-            </ul>
+            <button class="collapsible">Junior School Certificate</button>
+            <div class="content">
+                <ul>
+                    <li>Passed: 2017 | GPA: 5.00</li>
+                </ul>
+            </div>
+            <button class="collapsible">Secondary School Certificate</button>
+            <div class="content">
+                <ul>
+                    <li>Passed: 2020 | GPA: 4.72</li>
+                </ul>
+            </div>
+            <button class="collapsible">Higher Secondary Certificate</button>
+            <div class="content">
+                <ul>
+                    <li>Passed: 2022 | GPA: 5.00</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="volunteer">
-            <h2>Volunteer Work</h2>
-            <ul>
-                <li>Younker’s 71 (2018 - 2021): Assisted in providing food, organized Ramadan iftar events, and distributed winter clothing to those in need.</li>
-                <li>Home Tutor (2023 - Present): Provided personalized instruction to students, enhancing their academic performance and fostering a passion for learning.</li>
-            </ul>
+        <section id="work">
+            <h2>Work Experience</h2>
+            <button class="collapsible">Volunteer Work</button>
+            <div class="content">
+                <ul>
+                    <li>Younker’s 71 (2018 - 2021): Assisted in providing food, organized Ramadan iftar events, and distributed winter clothing to those in need.</li>
+
+                </ul>
+            </div>
+            <button class="collapsible">Professional Work</button>
+            <div class="content">
+                <ul>
+                    <li>Home Tutor (2023 - Present): Providing personalized tuition to students in Computer Science and Programming.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="certificate">
-            <h2>Certificates</h2>
-            <div class="certificate">
-                <img src="certificate.jpg" alt="My Certificate">
+            <h2>Certificate</h2>
+            <div class="certificate" style="text-align: center;">
+                <p>Cybrary Certificate of Completion:</p>
+                <img src="certificate.jpg" alt="Cybrary Certificate" style="max-width: 30%; border-radius: 8px;">
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:nazmulislamnayeem03@example.com">nazmulislamnayeem03@example.com</a></p>
-            <p>Phone: +8801644417492</p>
-            <p>Facebook: <a href="https://www.facebook.com/nazmul.i.nayeem12" target="_blank">https://www.facebook.com/nazmul.i.nayeem12</a></p>
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="tel:+8801644417490">Mobile: +8801644417490 </a>
+                <a href="mailto:nazmulislamnayeem03@gmail.com">    Email    </a>
+                <a href="https://github.com/nazmulislamna" target="_blank">   GitHub    </a>
+                <a href="https://www.facebook.com/nazmul.i.nayeem12" target="_blank">    Facebook    </a>
+                <a href="https://www.instagram.com/nazmul.i_nayeem/" target="_blank">    Instagram   </a>
+            </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Nazmul Islam Nayeem. All Rights Reserved.</p>
+        <p>2024 Nazmul Islam Nayeem. All Rights Reserved</p>
     </footer>
 
     <script>
-        // Collapsible Section Script
         document.querySelectorAll('.collapsible').forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
                 content.classList.toggle('show');
             });
         });
     </script>
 </body>
 </html>
+
